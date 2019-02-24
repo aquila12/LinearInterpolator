@@ -25,8 +25,8 @@ table of values:
 |  67	|  82 |
 |  83	|  91 |
 
-For this function, x0 is 3 (as it is the lowest value).  The x coordinates are
-separated by 16, which (by requirement) is a power of 2.  `log2(16)` is 4, so
+For this function, `x0=3` (as it is the lowest value).  The x coordinates are
+separated by 16, which (by requirement) is a power of 2.  log2(16) is 4, so
 `segment_bits=4`.
 
 Since we have 6 points defined, there are a total of 5 line segments in this
