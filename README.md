@@ -48,9 +48,11 @@ int result = li.interpolate(x, y);
 /* Output is in y, if the operation succeeded, otherwise is left unchanged */
 ```
 
-The result code is one of LININT_OK, LININT_TOO_LOW (if the input was less than
-`x0`), or LININT_TOO_HIGH (if the input was outside the table range).
+The result code is one of `LININT_OK`, `LININT_TOO_LOW` (if the input was less than
+`x0`), or `LININT_TOO_HIGH` (if the input was outside the table range).
 
 Note that once you've set up the parameters for x (`x0` and `segment_bits`), you
 can easily substitute the Y values if required (e.g. to convert to a different
-unit), and extend the table as necessary.
+unit without further operations), and extend the table as necessary.  It might
+be useful, for example, to enable Farenheit and Celcius readings of a temperature
+sensor.
