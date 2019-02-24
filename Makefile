@@ -1,4 +1,4 @@
-TARGET ?= a.out
+TARGET ?= li-spec
 SRC_DIRS ?= ./src ./test
 
 SRCS := $(shell find $(SRC_DIRS) -name *.cpp -or -name *.c -or -name *.s)
