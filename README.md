@@ -1,9 +1,13 @@
+LinearInterpolator
+==================
 This library does linear interpolation of integers.  It's intended for use with
 analogRead() and similar, where an input comes in in an arbitrary unit which
 needs converting.
 
+Data Setup
+==========
 Setting up a suitable table of value is slightly involved because of the way the
-interpolator is set up.  You'll need the following information to construct your
+interpolator works.  You'll need the following information to construct your
 conversion table:
 - The minimum input value you'll accept (x0)
 - A set of points spaced evenly from x0 at a power-of-two step size, with the
@@ -11,6 +15,7 @@ conversion table:
 
 For example, to map the square-root law, `y=10*sqrt(x)`, we can produce the
 table of values:
+
 | x   | y   |
 | ---:| ---:|
 |   3	|  17 |
