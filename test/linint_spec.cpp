@@ -22,7 +22,7 @@ int main() {
 
   int r, y;
 
-  when("Attempting to interpolate beyong the minimum input");
+  when("Attempting to interpolate beyond the minimum input");
   y = 0xcafe;
   r = li.interpolate(179, y);
   test("the operation should fail as too low", r, == LININT_TOO_LOW);

@@ -36,7 +36,7 @@ To create an interpolator based on this table, supply the parameters and the `y`
 values:
 ```
 int square_root_law[] = { 17, 44, 59, 71, 82, 91 };
-LinearInterpolator li(0, 4, 5, square_root_law);
+LinearInterpolator li(3, 4, 5, square_root_law);
 ```
 
 To actually interpolate a value, call `li.interpolate`.  Note the return code
